@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakbay Pilipinas</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body><nav>
+    <a href="#home">Home</a>
+    <a href="#packages">Tour Packages</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+    <header id="home">
+    <h1>🇵🇭 Lakbay Pilipinas</h1>
+    <p class="tagline">Your Journey, Our Passion!</p><div class="hero-content">
+    <p class="hero-label">EXPLORE • TRAVEL • DISCOVER</p>
+    <h2>Discover the Beauty of the Philippines</h2>
+    <p>From beautiful beaches to breathtaking mountains, find your next adventure with us.</p>
+
+    <a href="#packages" class="explore-btn">
+        ✈ Explore Tour Packages
+    </a>
+</div>
+
+</header>
+
+    <p>Discover beautiful destinations in the Philippines.</p>
+
+    
+    <div class="about-content">
+        <p class="about-label">GET TO KNOW US</p>
+        <h2>About Lakbay Pilipinas</h2>
+
+        <p class="about-description">
+            We believe that every journey creates unforgettable memories.
+            Lakbay Pilipinas helps you discover the beauty of our country
+            through exciting, affordable, and memorable tour packages.
+        </p>
+
+        <div class="about-features">
+            <div class="about-feature">
+                <span>🏝️</span>
+                <h3>Beautiful Destinations</h3>
+                <p>Explore the amazing beaches, islands, and natural wonders of the Philippines.</p>
+            </div>
+
+            <div class="about-feature">
+                <span>💙</span>
+                <h3>Affordable Adventures</h3>
+                <p>Find tour packages that fit your travel plans and budget.</p>
+            </div>
+
+            <div class="about-feature">
+                <span>✈️</span>
+                <h3>Unforgettable Memories</h3>
+                <p>Make every trip a special experience worth remembering.</p>
+            </div>
+        </div>
+    </div>
+</>
+    <p>Welcome to Lakbay Pilipinas! We help travelers discover beautiful destinations across the Philippines through affordable and exciting tour packages.</p>
+</>
+
+<section <section id="booking">
+    <h2>Book Your Tour</h2>
+
+    <form id="bookingForm">
+        <label for="customerName">Full Name:</label><br>
+        <input type="text" id="customerName" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="destination">Choose Destination:</label><br>
+        <select id="destination" required>
+            <option value="">Select a destination</option>
+            <option value="Boracay">Boracay Island</option>
+            <option value="Palawan">Palawan</option>
+          <option value="Bohol">Bohol</option>
+            <option value="Cebu">Cebu</option>
+            <option value="Siargao">Siargao</option>
+        </select>
+        <br><br>
+
+       <p>
+            <strong>Price per Person:</strong>
+            <span id="pricePerPerson">₱0</span>
+        </p>
+
+        <p>
+            <strong>Total Price:</strong>
+            <span id="totalPrice">₱0</span>
+        </p> <label for="travelers">Number of Travelers:</label><br>
+        <input type="number" id="travelers" min="1" max="20" value="1" required>
+        <br><br>
+
+        <label for="travelDate">Travel Date:</label><br>
+      <label for="travelDate">Travel Date:</label><br>
+<input type="date" id="travelDate" required>
+        <br><br>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+
+    <p id="bookingMessage"></p>
+</section>
+    <section id="contact">
+    <div class="contact-heading">
+        <p class="contact-label">WE'D LOVE TO HEAR FROM YOU</p>
+        <h2>Contact Us</h2>
+        <p>Have questions about your next adventure? We're here to help!</p>
+    </div><div class="contact-card">
+    <div class="contact-icon">📧</div>
+    <h3>Email Us</h3>
+    <p>Send us your questions anytime.</p>
+    <a href="mailto:lakbaypilipinas@example.com">
+        lakbaypilipinas@example.com
+    </a>
+</div>
+
+<div class="contact-card">
+    <div class="contact-icon">📱</div>
+    <h3>Call Us</h3>
+    <p>We're happy to assist you.</p>
+    <a href="tel:+639123456789">0912-345-6789</a>
+</div>
+
+<div class="contact-card">
+    <div class="contact-icon">📍</div>
+    <h3>Our Location</h3>
+    <p>Discover destinations across the beautiful</p>
+    <strong>Philippines</strong>
+</div>
+
+</section>
+    <p>Email: lakbaypilipinas@gmail.com</p>
+    <p>Phone: 0912-345-6789</p>
+    <p>Location: Philippines</p>
+</section>
+    <h2>Explore Our Tour Packages</h2>
+
+    <div class="destination">
+        <h3>Boracay Island</h3>
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80" alt="Beautiful tropical beach">
+        <p>Enjoy the beautiful beaches and clear blue waters of Boracay.</p>
+        <p><strong>Package Price:</strong> ₱3,500 per person</p>
+        <button onclick="document.getElementById('destination').value='Boracay'; document.getElementById('destination').dispatchEvent(new Event('change')); document.getElementById('booking').scrollIntoView({behavior:'smooth'});">
+    Book Now
+</button>
+    </div>
+
+    <div class="destination">
+        <h3>Palawan</h3>
+        <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80" alt="Tropical island">
+        <p>Explore amazing islands and breathtaking natural scenery.</p>
+        <p><strong>Package Price:</strong> ₱4,500 per person</p>
+        <button onclick="document.getElementById('destination').value='Palawan'; document.getElementById('destination').dispatchEvent(new Event('change')); document.getElementById('booking').scrollIntoView({behavior:'smooth'});">
+    Book Now
+</button>
+</>
+    </div>
+<div class="destination">
+        <h3>Bohol</h3>
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Beautiful nature destination">
+        <p>Discover the famous Chocolate Hills and beautiful island scenery.</p>
+        <p><strong>Package Price:</strong> ₱3,800 per person</p>
+<button onclick="document.getElementById('destination').value='Bohol'; document.getElementById('destination').dispatchEvent(new Event('change')); document.getElementById('booking').scrollIntoView({behavior:'smooth'});">
+    Book Now
+</button>
+    </div>
+
+    <div class="destination">
+        <h3>Cebu</h3>
+        <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80" alt="Tropical island scenery">
+        <p>Enjoy island adventures, waterfalls, and beautiful ocean views.</p>
+        <p><strong>Package Price:</strong> ₱4,000 per person</p>
+        <button onclick="document.getElementById('destination').value='Cebu'; document.getElementById('destination').dispatchEvent(new Event('change')); document.getElementById('booking').scrollIntoView({behavior:'smooth'});">
+    Book Now
+</button>
+    </div>
+
+    <div class="destination">
+        <h3>Siargao</h3>
+        <img src="https://images.unsplash.com/photo-1455729552865-3658a5d39692?auto=format&fit=crop&w=800&q=80" alt="Island and ocean view">
+        <p>Experience surfing, island hopping, and a relaxing tropical getaway.</p>
+        <p><strong>Package Price:</strong> ₱4,200 per person</p>
+        <button onclick="document.getElementById('destination').value='Siargao'; document.getElementById('destination').dispatchEvent(new Event('change')); document.getElementById('booking').scrollIntoView({behavior:'smooth'});">
+    Book Now
+</button>
+    </div></section>
+    <p>Choose your next travel adventure with us.</p>
+<footer> <!-- CUSTOMER TESTIMONIALS -->
+<section id="testimonials">
+    <h2>💬 What Our Travelers Say</h2>
+    <p class="testimonial-subtitle">
+        Hear about the adventures of our happy travelers!
+    </p>
+
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <img class="testimonial-avatar"
+src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces"
+alt="Traveler profile photo">
+            <div class="testimonial-content">
+                <p>"Our Boracay trip was amazing! The beautiful beaches made our vacation unforgettable."</p>
+                <h4>Maria Santos</h4>
+                <span class="testimonial-stars">★★★★★</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <img class="testimonial-avatar"
+src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces"
+alt="Traveler profile photo">
+            <div class="testimonial-content">
+                <p>"Palawan was breathtaking! We enjoyed exploring the islands and crystal-clear waters."</p>
+                <h4>James Reyes</h4>
+                <span class="testimonial-stars">★★★★★</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <img class="testimonial-avatar"
+src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=faces"
+alt="Traveler profile photo">
+            <div class="testimonial-content">
+                <p>"Booking was easy, and the destinations were beautiful. I would love to travel again!"</p>
+                <h4>Ana Cruz</h4>
+                <span class="testimonial-stars">★★★★★</span>
+            </div>
+        </div>
+    </div>
+</section>
+    <p>&copy; 2026 Lakbay Pilipinas. All rights reserved.</p>
+    <p>Your Journey, Our Passion!</p>
+</footer><script>
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("customerName").value;
+        const destination = document.getElementById("destination").value;
+        const travelers = document.getElementById("travelers").value;
+        const travelDate = document.getElementById("travelDate").value;
+
+        const message = document.getElementById("bookingMessage");
+
+        message.innerHTML =
+    "✅ Booking Request Submitted!<br>" +
+    "Thank you, " + name + "!<br>" +
+    "Destination: " + destination + "<br>" +
+    "Number of Travelers: " + travelers + "<br>" +
+    "Price per Person: " + document.getElementById("pricePerPerson").textContent + "<br>" +
+    "Total Price: " + document.getElementById("totalPrice").textContent + "<br>" +
+    "Travel Date: " + travelDate + "<br>" +
+    "We look forward to your trip!"; 
+    });const destinationInput = document.getElementById("destination");
+    const travelersInput = document.getElementById("travelers");
+
+    function updatePrice() {
+        const destination = destinationInput.value;
+        const travelers = Number(travelersInput.value);
+
+        let price = 0;
+
+      if (destination === "Boracay") {
+price = 3500;
+} else if (destination === "Palawan") {
+price = 4500;
+} else if (destination === "Bohol") {
+price = 3800;
+} else if (destination === "Cebu") {
+price = 4000;
+} else if (destination === "Siargao") {
+price = 4200;
+}
+        document.getElementById("pricePerPerson").textContent =
+            "₱" + price.toLocaleString("en-PH");
+
+        document.getElementById("totalPrice").textContent =
+            "₱" + (price * travelers).toLocaleString("en-PH");
+    }
+
+    destinationInput.addEventListener("change", updatePrice);
+    travelersInput.addEventListener("input", updatePrice);
+    updatePrice();
+</script></body>
+</html>
